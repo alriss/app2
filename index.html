@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            .button {
+              background-color: #3269ce;
+              border: none;
+              color: white;
+              width: 49.5% ;
+              height: 100%;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+              cursor: pointer;
+            }
+            .b1 {
+              background-color: #3269ce;
+            }
+            .b2 {
+              background-color: #bd3f3f;
+            }
+            </style>
+            <script>
+                function Choice(n,m) {
+                    document.getElementById("option"+m).remove()
+                    document.getElementById("option"+n).style.cursor  = "default";
+                    document.getElementById("option"+n).style.width  = "100%";
+                    document.getElementById("option"+n).style.height = "100%";
+                }
+            </script> 
+    </head>
+    <body>
+        <button id="option1" class="button b1" onclick="Choice(1,2)"></button>
+        <button id="option2" class="button b2" onclick="Choice(2,1)"></button>
+    </body>
+</html>
